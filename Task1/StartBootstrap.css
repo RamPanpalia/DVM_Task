@@ -559,6 +559,10 @@ textarea{
     .three{
         margin-left: 51%;
     }
+    .form{
+        width: 100%;
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width : 900px) {
@@ -567,6 +571,10 @@ textarea{
     }
     .c1{
         column-count: 1;
+    }
+    .form{
+        width: 70%;
+        margin-left: 20%;
     }
 }
 
