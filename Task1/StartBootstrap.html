@@ -16,6 +16,40 @@
 </head>
 
 <body>
+<div class="form">
+        <div class="head">
+            <span class="feed">Send Feedback</span>
+            <span class="x" onclick="hideForm()">&#10006</span>
+        </div>
+        <form action="" name="form">
+        <div class="tab" id="tab1" onclick="adjustLabel1()">
+            <label for="name" class="label" id="label1">Name</label>
+            <input type="text" placeholder="Full Name" name="nam">
+            <div class="invalid-name"> <br> A name is required ! </div>
+        </div>
+        <div class="tab" id="tab2" onclick="adjustLabel2()">
+            <label for="email" class="label" id="label2">Email Address</label>
+            <input type="email" placeholder="name@example.com" name="email">
+            <div class="invalid-email">Please enter your email address!</div>
+        </div>
+        <div class="tab" id="tab3" onclick="adjustLabel3()">
+            <label for="phone" class="label" id="label3">Phone Number</label>
+            <input type="tel" placeholder="-9876543210-" name="phone">
+            <div class="invalid-phone">Please enter your phone number!</div>
+        </div>
+        <div class="tab" id="tab4" onclick="adjustLabel4()">
+            <label for="message" class="label" id="label4">Message</label>
+            <textarea class="message-text-area" type="text" placeholder="Enter your message here" style="height: 10rem" name="message"></textarea>
+            <div class="invalid-message"> <br> A message is required.</div>
+        </div>
+        <!-- <div class="tab">
+            <div class="submit">
+                
+            </div>
+        </div> -->
+        <button class="Submit" onclick="check();return false;">Submit</button>
+    </form>
+</div>
     <div class="navbar" style="height: 35px;">
         <div class="one">
             <b>Start Bootstrap</b>
