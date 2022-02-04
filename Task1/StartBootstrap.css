@@ -6,7 +6,7 @@
 .form{
     z-index: 5;
     background-color: white;
-    position: absolute;
+    position: fixed;
     transition: 0.5s;
     border-radius: 10px;
     width: 50%;
