@@ -28,12 +28,15 @@ function getVal(){
 }
 
 function validateForm(){
-    let x1= document.forms["myForm"]["in1"].value;
-    let x2 = document.forms["myForm"]["in2"].value;
-    let x3 = document.forms["myForm"]["in3"].value;
-    let x4= document.forms["myForm"]["in4"].value;
-    let x5 = document.forms["myForm"]["in5"].value;
-    if (x1 == "" || x2 == "" ||x3 == "" || x4 == "" || x5 == "") {
+    let x_2 = document.forms["myForm"]["in-2"];
+    let x_1= document.forms["myForm"]["in-1"];
+    let x0= document.forms["myForm"]["in0"];
+    let x1= document.forms["myForm"]["in1"];
+    let x2 = document.forms["myForm"]["in2"];
+    let x3 = document.forms["myForm"]["in3"];
+    let x4= document.forms["myForm"]["in4"];
+    let x5 = document.forms["myForm"]["in5"];
+    if (x_2 == "" || x_1 == "" || x0 == "" || x1 == "" || x2 == "" ||x3 == "" || x4 == "" || x5 == "") {
         alert("Please fill the form completely");
         return false;
     }
