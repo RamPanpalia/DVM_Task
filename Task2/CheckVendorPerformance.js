@@ -37,6 +37,13 @@ function validateForm(){
         alert("Please fill the form completely");
         return false;
     }
+    else{
+        x1.style.border="2.8px solid green";
+        x2.style.border="2.8px solid green";
+        x3.style.border="2.8px solid green";
+        x4.style.border="2.8px solid green";
+        x5.style.border="2.8px solid green";
+    }
     return true; 
 }
 
@@ -82,13 +89,21 @@ document.querySelector('.but2').addEventListener("click",clear);
 function clear(){
     confirm("Are you sure ?");
     document.querySelector('.in-2').value="";
+    document.querySelector('.in-2').style.border="2.5px solid black";
     document.querySelector('.in-1').value="";
+    document.querySelector('.in-1').style.border="2.5px solid black";
     document.querySelector('.in0').value="";
+    document.querySelector('.in0').style.border="2.5px solid black";
     document.querySelector('.in1').value="";
+    document.querySelector('.in1').style.border="2.5px solid black";
     document.querySelector('.in2').value="";
+    document.querySelector('.in2').style.border="2.5px solid black";
     document.querySelector('.in3').value="";
+    document.querySelector('.in3').style.border="2.5px solid black";
     document.querySelector('.in4').value="";
+    document.querySelector('.in4').style.border="2.5px solid black";
     document.querySelector('.in5').value="";
+    document.querySelector('.in5').style.border="2.5px solid black";
 }
 
 let btn=document.querySelector('.but1').addEventListener("click",function(e){
