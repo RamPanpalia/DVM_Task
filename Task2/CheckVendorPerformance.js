@@ -36,7 +36,7 @@ function validateForm(){
     let x3 = document.forms["myForm"]["in3"];
     let x4= document.forms["myForm"]["in4"];
     let x5 = document.forms["myForm"]["in5"];
-    if (x_2 == "" || x_1 == "" || x0 == "" || x1 == "" || x2 == "" ||x3 == "" || x4 == "" || x5 == "") {
+    if (x_2.value == "" || x_1.value == "" || x0.value == "" || x1.value == "" || x2.value == "" || x3.value == "" || x4.value == "" || x5.value == "") {
         alert("Please fill the form completely");
         return false;
     }
