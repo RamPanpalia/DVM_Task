@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Vendor Performance</title>
+</head>
+<link rel="stylesheet" href="CheckVendorPerformance.css">
+
+<body>
+    <div class="dabba">
+        <div class="A">
+            <u>
+                <b>Check Vendor Performance</b>
+            </u>
+        </div>
+        <div class="sub-dabba">
+            <form action="" name="myForm" onsubmit="return false;">
+                <div class="tab-2" class="tab" onchange="">
+                    <label for="" class="" id="">Name</label>
+                    <input class="in-2" class="in" name="in-2" type="text" placeholder="">
+                </div>
+                <div class="tab-1" class="tab" onchange="">
+                    <label for="" class="" id="">BITS ID</label>
+                    <input class="in-1" class="in" name="in-1" type="text" placeholder="">
+                </div>
+                <div class="tab0" class="tab" onchange="">
+                    <label for="" class="" id="">Phone Number</label>
+                    <input class="in0" class="in" name="in0" type="phone" placeholder="">
+                </div>
+                <div class="tab1" class="tab">
+                    <label for="edd">Expected Delivery Date </label>
+                    <input class="in1" class="in" name="in1" type="date" id="edd">
+                </div>
+
+                <div class="tab2" class="tab">
+                    <label for="rd">Recieved Date </label>
+                    <input class="in2" class="in" name="in2" type="date" id="rd">
+                </div>
+
+                <div class="tab3" class="tab" onchange="getVal();">
+                    <label for="" class="" id="">Quantity Demanded </label>
+                    <input class="in3" class="in" name="in3" type="number" placeholder="">
+                </div>
+                <div class="tab4" class="tab" onchange="getVal()">
+                    <label for="" class="" id="">Quantity Received</label>
+                    <input class="in4" class="in" name="in4" type="number" placeholder="">
+                </div>
+                <div class="tab5" class="tab" onchange="getVal()">
+                    <label for="" class="" id="">Quantity Returned</label>
+                    <input class="in5" class="in" name="in5" type="number" placeholder="">
+                </div>
+                <div class="tab6">
+                    <button class="but1" onclick="return false;">Submit</button>
+                    <button class="but2" onclick="return false;">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="doosradabba">
+        <div class="ddtab" id="dummytab">
+            <span class="s1">Name: </span>
+            <br>
+            <span class="s1">BITS ID: </span>
+            <br>
+            <span class="s1">Phone: </span>
+            <br>
+            <span class="s1">Expected Delivery Date:</span>
+            <br>
+            <span class="s1">Received Date:</span>
+            <br>
+            <span class="s1">Quantity Demanded:</span>
+            <br>
+            <span class="s1">Quantity Received:</span>
+            <br>
+            <span class="s1">Quantity Returned:</span>
+            <br>
+            <button class="but3" onclick="delete_ddtab()">Delete</button>
+        </div>
+        <!-- <div class="ddtab">
+            <span class="s1"></span>
+            <button class="but3">Delete</button>
+        </div> -->
+        <div class="doosradabba0"></div>
+        <button class="but4" onclick="localStorage.clear();location.reload();">Delete All</button>
+    </div>
+    <script src="CheckVendorPerformance.js"></script>
+</body>
+
+</html>

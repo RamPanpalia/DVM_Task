@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    animation: fadein .5s ,adjust01 1s;
+    background-color: rgb(253, 178, 65);
+}
+
+.A{
+    margin: 15px 150px 0 120px;
+    padding-top: 10px;
+    font-size: 27px;
+    text-align: center;
+    font-family: Arial ;
+}
+
+.dabba{
+    border: 4px solid black;
+    box-shadow:inset 4px 4px rgb(253, 178, 65),
+                inset -4px 4px rgb(253, 178, 65),
+                inset 4px -4px rgb(253, 178, 65),
+                inset -4px -4px rgb(253, 178, 65);
+    /* border-radius: 40px; */
+    /* font-family: consolas; */
+    z-index: 1;
+    background-color: white;
+    margin: 40px 150px 60px 150px;
+    padding-top: 0px;
+    align-items: center;
+}
+
+.sub-dabba{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    column-count: 2;
+    -webkit-column-break-inside:avoid;
+}
+
+.tab-2, .tab-1, .tab0, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6{
+    -webkit-column-break-inside:avoid;
+    margin: 40px 35px;
+    /* padding: 10px 40px; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.tab6{
+    display: block;
+}
+
+.tab1{
+    margin-top: 0px;
+}
+
+label{
+    font-family: consolas;
+    font-size: 20px;
+}
+
+input{
+    margin: 9px 0;
+    /* border: none; */
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: 2.5px solid;
+}
+
+.tab-2:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.tab-1:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.tab0:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.tab1:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.tab2:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.tab3:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.tab4:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.tab5:hover input{
+    animation: adjust 1.5s;
+    animation-delay: 2s;
+}
+
+.but1:hover, .but2:hover, .but3:hover{
+    animation: adjust .5s;
+}
+
+.but1, .but2, .but3, .but4{
+    border: none;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font: 17px consolas;
+    border-radius: 40px;
+    margin: 10px 6px;
+    padding: 9px 34px;
+}
+
+
+.doosradabba{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 100px;
+}
+
+.ddtab{
+    border: 4px solid black;
+    box-shadow:inset 4px 4px rgb(253, 178, 65),
+                inset -4px 4px rgb(253, 178, 65),
+                inset 4px -4px rgb(253, 178, 65),
+                inset -4px -4px rgb(253, 178, 65);
+    /* border-radius: 40px; */
+    z-index: 1;
+    font-size: 16px;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: consolas;
+    animation: adjust01 ease-in-out .9s 1;
+    width: 45%;
+}
+
+#dummytab{
+    display: none;
+}
+
+.s1{
+    font-weight: 100;
+}
+
+@-webkit-keyframes adjust {
+    0% { transform: rotate(0deg),scale(1.1);box-shadow: 4px 4px 30px; }
+    33% { transform: rotate(-3deg); }
+    66% { transform: rotate(3deg);box-shadow: 4px 4px 30px; }
+    100%{transform: rotate(0deg),scale(1);box-shadow: none;}
+}
+  
+@keyframes adjust {
+    0% { transform: rotate(0deg),scale(1.1);box-shadow: 4px 4px 30px; }
+    33% { transform: rotate(-3deg); }
+    66% { transform: rotate(3deg);box-shadow: 4px 4px 30px; }
+    100%{transform: rotate(0deg),scale(1);box-shadow: none;}
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    100%{ opacity: 1; }
+}
+  
+@keyframes fadein {
+    0% { opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+@-webkit-keyframes adjust01 {
+    0% { transform: scale(1.05); }
+    50% { transform: scale(0.995); }
+    75% { transform: scale(1.005); }
+    100%{ transform: scale(1); }
+}
+  
+@keyframes adjust01 {
+    0% { transform: scale(1.05); }
+    50% { transform: scale(0.995); }
+    75% { transform: scale(1.005); }
+    100%{ transform: scale(1); }
+}
+
+@media only screen and (max-width:1000px) {
+    
+.dabba{
+    margin-left: 110px;
+    margin-right: 90px;
+}
+
+.sub-dabba{
+    column-count: 1;
+}
+
+.but1, .but2, .but3{
+    margin: 10px 4px;
+    padding: 9px 38px;
+}
+
+.ddtab{
+    width: 70%;
+}
+
+}
+
+@media only screen and (max-width:550px){
+
+.A{
+    margin-left: 70px;
+    margin-right: 55px;
+}
+
+.dabba{
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.tab1, .tab2, .tab3, .tab4, .tab5, .tab6{
+    width: 70%;
+}    
+
+.ddtab{
+    width: 100%;
+}
+
+.tab6{
+    display: flex;
+}
+
+}
